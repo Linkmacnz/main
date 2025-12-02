@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Neon Runner — Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Neon Runner</h1>
+<nav>
+<a href="#play">Play</a>
+<a href="#instructions">Instructions</a>
+<a href="#credits">Credits</a>
+<a href="#media">Media</a>
+</nav>
+</header>
+
+<main>
+<section id="play" class="card">
+<div class="game-container">
+<canvas id="gameCanvas" width="900" height="450"></canvas>
+<div class="ui-top">
+<div id="score">Score: 0</div>
+<div id="lives">Lives: 3</div>
+</div>
+<div class="controls">
+<button id="startBtn">Start</button>
+<button id="pauseBtn">Pause</button>
+<button id="restartBtn">Restart</button>
+</div>
+<div id="message" class="message hidden">Press Start to play</div>
+</div>
+</section>
+
+<section id="instructions" class="card">
+<h2>Instructions</h2>
+<ul>
+<li>Use <strong>Arrow Left</strong> and <strong>Arrow Right</strong> to move.</li>
+<li>Press <strong>Space</strong> to jump.</li>
+<li>Avoid moving drones (moving obstacles) and stationary spikes.</li>
+<li>Collect coins for score. Background changes after score thresholds.</li>
+<li>Lose all lives and you'll see the Game Over message — press Restart to try again.</li>
+</ul>
+</section>
+
+<section id="credits" class="card">
+<h2>Credits</h2>
+<p>Team: Alice (Lead dev), Bob (Art & design), Carol (Sound & testing)</p>
+<p>All in-game art is drawn procedurally on canvas. No external assets used.</p>
+</section>
+
+<section id="media" class="card">
+<h2>Media</h2>
+<p>Demo video: (add link or embedded mp4 here)</p>
+<p>Screenshots: (add screenshots to the media folder and link them here)</p>
+</section>
+</main>
+
+<footer>
+<p>&copy; Your Team Name - 2025</p>
+</footer>
+
+<script src="game.js"></script>
+</body>
+</html>
